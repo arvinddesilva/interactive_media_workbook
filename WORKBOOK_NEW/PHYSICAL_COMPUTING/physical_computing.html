@@ -1,0 +1,155 @@
+<!-- I used chatGPT for general assistance and as an education tool throughout my coding process -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Physical Computing</title>
+  <link rel="stylesheet" href="../PHYSICAL_COMPUTING/physical_computing.css">
+  <script src="../PHYSICAL_COMPUTING/physical_computing.js"></script>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a href="../index.html">ARVIND DE SILVA</a>
+      </div>
+    
+      <div class="text-container">
+        <div class="text"></div>
+      </div>
+
+      <div class="content">
+        
+        <h1>PHYSICAL COMPUTING COMPONENTS</h1>
+        <img src="physical_computing_components.JPEG" alt="Physical Computing Components" width="800px">
+
+        <br><br><br><br>
+
+
+        <h1>ARDUINO BOARD</h1>
+        <img src="arduino_board_diagram.png" alt="Arduino Board Diagram" width="800px">
+        <br>
+        <p>Full Arduino Glossary:</p>
+        <a href="url">https://www.browncountylibrary.org/wp-content/uploads/2021/09/Arduino_Diagram_Glossary.pdf</a>
+  
+        <br><br><br><br>
+
+
+        <h1>LED PUSH-BUTTON CIRCUIT</h1>
+        <img src="blinking_led.gif" alt="Blinking LED GIF" width="800px">
+
+        <br><br>
+
+        <h2>ARDUINO CIRCUIT</h2>
+        <img src="push_button_led_diagram.png" alt="Push Button LED Diagram" width="600px">
+
+        <br><br><br><br>
+
+
+        <h1>ULTRASOUND BUZZER</h1>
+
+        <img src="pixel-speech-bubble.png" alt="Pixel Speech Bubble" width="800px">
+
+        <video id="ultrasound_buzzer" width="850px" height="550px" autoplay muted loop onclick="toggleSound()">
+          <source src="ultrasound_buzzer.MP4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+        <p>Click to toggle sound!</p>
+
+        <script script>
+          var video = document.getElementById("ultrasound_buzzer");
+          var isMuted = true;
+
+          function toggleSound() {
+            if (isMuted) {
+              video.muted = false; // Unmute the video
+              isMuted = false;
+            } else {
+              video.muted = true; // Mute the video
+              isMuted = true;
+            }
+          }
+        </script>
+
+        <br><br>
+
+        <h2>ARDUINO CIRCUIT</h2>
+        <img src="ultrasound_buzzer_diagram.png" alt="ultrasound Buzzer Diagram" width="600px">
+
+        <h2>CODE</h2>
+        <img src="ultrasound_buzzer_code.png" alt="Ultrasound Buzzer Code" width="600px">
+
+        <br><br><br><br>
+
+
+        <h1>FISH PLAYGROUND</h1>
+        <img src="fish_playground.gif" alt="Fish Playground GIF" width="800px">
+
+        <br><br>
+
+        <h2>ARDUINO CIRCUIT</h2>
+        <img src="fish_playground_diagram.png" alt="Fish Playground Diagram" width="600px">
+
+        <h2>CODE</h2>
+        <img src="fish_playground_code.png" alt="Fish Playground Code" width="600px">
+
+        <br><br><br><br>
+
+
+        <h1>LED WITH POTENTIOMETER</h1>
+        <img src="potentiometer.gif" alt="LED with Potentiometer GIF" width="800px">
+
+        <br><br>
+
+        <h2>ARDUINO CIRCUIT</h2>
+        <img src="potentiometer_diagram.png" alt="Potentiometer Diagram" width="600px">
+
+        <h2>CODE</h2>
+        <img src="potentiometer_code.png" alt="Potentiometer Code" width="600px">
+
+        <br><br><br><br>
+
+
+        <h1>CAPACITIVE TOUCH</h1>
+        <img src="capacitive_touch.gif" alt="Capacitive Touch GIF" width="800px">
+
+        <br><br>
+
+        <h2>ARDUINO CIRCUIT</h2>
+        <img src="capacitive_touch_diagram.png" alt="Capacitive Touch Diagram" width="600px">
+
+        <h2>CODE</h2>
+        <div class="block">
+        <img src="capacitive_touch_code.png" alt="Capacitive Touch Code" width="600px">
+        <img src="capacitive_touch_code2.png" alt="Capacitive Touch Code" width="600px">
+        </div>
+
+        <br><br>
+
+        <img src="capacitive_touch2.gif" alt="Capacitive Touch GIF" width="800px">
+        <div class="text-box">
+        <p>We initally thought that it was responding to our proximity,<br>
+          so Aidan started humping the table
+        </p>
+       </div>
+
+       <br><br>
+
+       <img src="capacitive_touch3.gif" alt="Capacitive Touch GIF" width="800px">
+       <div class="text-box">
+       <p>But then we realised it was the metal from the machine on the table!<br>
+       </p>
+      </div>
+
+      <br><br><br><br>
+
+
+      <h1>PLAYING AROUND WITH SENSORS</h1>
+        <img src="sensor1.gif" alt="Sensors GIF" width="800px">
+        <br><br>
+        <img src="sensor2.gif" alt="Sesnors GIF" width="800px">
+
+
+</body>

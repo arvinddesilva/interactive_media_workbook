@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:100');
+
+@font-face {
+  font-family: 'NeueMontrealMono-Bold';
+  src: url('../NeueMontrealMono/PPNeueMontrealMono-Book.otf') format('opentype');
+}
+
+html, body {
+  font-family: 'NeueMontrealMono-Bold', 'Roboto Mono', monospace;
+  background: #d3d3d3;
+  height: 100%;
+  overflow-x: hidden;
+  margin: 0; 
+  padding: 0;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #171717;
+  font-size: 24px;
+  text-align: center;
+  padding: 30px 30px;
+  text-decoration: none; /*removes the underlines from the links*/
+}
+
+.navbar a:hover {
+  color: #171717;
+  filter: blur(2px);
+}
+
+.text-container {
+  height: calc(100vh);
+  width: 100vw;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.text {
+  font-weight: 100;
+  font-size: 120px;
+  color: #171717;
+  text-align: center; 
+}
+
+.dud {
+  color: #757575;
+}
+
+.content {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+h1 {
+  font-family: 'NeueMontrealMono-Bold', 'Roboto Mono', monospace;
+  color: #171717;
+  font-size: 24px;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'NeueMontrealMono-Bold', 'Roboto Mono', monospace;
+  color: #171717;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* unvisited link */
+a:link {
+  color: #171717;
+}
+
+/* visited link */
+a:visited {
+  color: #101720;
+}
+
+/* mouse over link */
+a:hover {
+  color: darkorange;
+}
+
+/* selected link */
+a:active {
+  color: #101720;
+}
+
+.code {
+  color: #FAFAFA;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color:#101720;
+  width: AUTO;
+  height: auto;
+}
+
+.block {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-box {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}

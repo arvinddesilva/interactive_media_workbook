@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:100');
+
+@font-face {
+  font-family: 'NeueMontrealMono-Bold';
+  src: url('NeueMontrealMono/PPNeueMontrealMono-Book.otf') format('opentype');
+}
+
+html, body {
+  font-family: 'NeueMontrealMono-Bold', 'Roboto Mono', monospace;
+  background: #d3d3d3;
+  height: 100%;
+  overflow-x: hidden;
+  margin: 0; 
+  padding: 0;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #171717;
+  font-size: 24px;
+  text-align: center;
+  padding: 30px 30px;
+  text-decoration: none; /*removes the underlines from the links*/
+}
+
+.navbar a:hover {
+  color: #171717;
+  filter: blur(2px);
+}
+
+.text-container {
+  height: calc(100vh);
+  width: 100vw;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.text {
+  font-weight: 100;
+  font-size: 120px;
+  color: #171717;
+  text-align: center; 
+}
+
+.dud {
+  color: #757575;
+}
+
+.boxes-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  height: 100vh; /* Set height to 100vh */
+  width: 100vw;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*
+#box1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Hide any content that extends beyond the box 
+}
+
+#canvas1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+*/
+
+#box1 {
+  position: relative;
+  overflow: hidden;
+}
+
+#video-wrapper {
+  position: relative;
+}
+
+#video-wrapper:hover::before {
+  content: '';
+  background: url('WEB-DESIGN.gif') center center no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#box2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#box2 img {
+  width: 850px;
+  height: 500px;
+}
+
+#gif-wrapper {
+  position: relative;
+}
+
+#gif-wrapper:hover::before {
+  content: '';
+  background: url('CREATIVE-CODING-HOVER.gif') center center no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#box3 video {
+  width: 850px;
+  height: 500px;
+}
+
+#video2-wrapper {
+  position: relative;
+}
+
+#video2-wrapper:hover::before {
+  content: '';
+  background: url('PHYSICAL-COMPUTING-HOVER.gif') center center no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
